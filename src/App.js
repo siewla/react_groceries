@@ -1,10 +1,26 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import Header from './components/Header'
+import Content from './components/Content'
+import FooterPage from './components/FooterPage'
 
-function App() {
-  return (
-    <h1>Hello React!</h1>
-  );
+
+export class App extends Component {
+  constructor (props){
+    super(props)
+    this.state ={
+    }
+  }
+  render() {
+    return (
+      <div>
+        <Header />
+        <Content />
+        <FooterPage />
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
+
+
