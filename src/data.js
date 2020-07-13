@@ -1,23 +1,25 @@
-const groceries = [
+const SAMPLE_GROCERIES = [
     {
         item: 'ItemOne',
         brand: 'BrandOne',
-        units: 'pack',
+        unit: 'pack',
         quantity: 10,
-        isPurchased: false
-      },
-      {
+        isPurchased: true
+    },
+    {
         item: 'ItemTwo',
         brand: 'BrandTwo',
-        units: 'kg',
+        unit: 'kg',
         quantity: 5,
         isPurchased: false
-      },
-      {
+    },
+    {
         item: 'ItemThree',
         brand: 'BrandThree',
-        units: 'liters',
+        unit: 'liters',
         quantity: 50,
         isPurchased: false
-      }
+    }
 ];
+
+export default SAMPLE_GROCERIES

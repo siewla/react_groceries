@@ -8,7 +8,7 @@ render() {
     <Router>
       <MDBNavbar className="justify-content-center" color="blue darken-2" dark expand="md">
         <MDBNavbarBrand>
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i><strong className="white-text"> GROCERY SHOPPING LIST</strong>
+          <i className="fa fa-shopping-cart" aria-hidden="true"></i><strong className="white-text"> GROCERY SHOPPING LIST</strong>
         </MDBNavbarBrand>
       </MDBNavbar>
     </Router>
