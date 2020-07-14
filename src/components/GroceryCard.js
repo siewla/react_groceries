@@ -17,6 +17,8 @@ export class GroceryCard extends Component {
             }
         }
 
+        console.log(this.props);
+        
         return (
             <div style={styles.groceryContainer}>
                 <h6>Item: <strong>{this.props.grocery.item}</strong></h6>

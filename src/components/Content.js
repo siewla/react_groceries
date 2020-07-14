@@ -11,11 +11,10 @@ export class Content extends Component {
     }
 
     handleForm =(event) => {
-        // console.log(event)
-        this.setState(prevState => {
-            return {
-                groceries: [event, ...prevState.groceries]}
-            })
+        console.log(event)
+        this.setState({
+                groceries: [event, ...this.state.groceries]})
+        
     }
 
     setPurchased =(i) =>{
@@ -73,7 +72,7 @@ export class Content extends Component {
                 <div style={styles.rightContainer}>
                     {this.state.groceries.map((grocery,index) =>{
                         return (
-                            <GroceryCard key={index} index={index} grocery={grocery} setPurchased={this.setPurchased} />
+                            <GroceryCard key={grocery.item+index} index={index} grocery={grocery} setPurchased={this.setPurchased} />
                         )
                     })}
                 </div>
