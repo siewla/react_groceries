@@ -11,7 +11,7 @@ export class Content extends Component {
     }
 
     handleForm =(event) => {
-        console.log(event)
+        // console.log(event)
         this.setState({
                 groceries: [event, ...this.state.groceries]})
         
